@@ -1,13 +1,17 @@
-import React, { PropTypes } from 'react'
-import Transition from 'react-addons-css-transition-group'
-import PortalWrap from 'react-portal-wrap'
+import { h, render, Component } from 'preact';
+import PropTypes from 'prop-types';
+import CSSTransitionGroup from 'preact-css-transition-group'
+import Portal from 'preact-portal'
 
-const TransitionPortal = ({ children, ...props }) =>
-  <PortalWrap>
-    <Transition {...props}>
-      {children}
-    </Transition>
-  </PortalWrap>
+const TransitionPortal = function({ children, ...props }) {
+  return (
+    <Portal ref={(ref) => { this.portal = ref; }} into="body">
+      <CSSTransitionGroup {...props}>
+        {children}
+      </CSSTransitionGroup>
+    </Portal>
+  );
+}
 
 TransitionPortal.propTypes = {
   children: PropTypes.node

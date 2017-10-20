@@ -1,5 +1,5 @@
 {
-  "name": "react-remodal",
+  "name": "preact-remodal",
   "version": "1.0.3",
   "description": "A better (animated, customizable, tested etc.) modal for React",
   "keywords": [
@@ -61,6 +61,7 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
+    "jsdom": "^11.3.0",
     "mocha": "^2.4.5",
     "mocha-jsdom": "^1.1.0",
     "run-sequence": "^1.1.5",
@@ -76,12 +77,11 @@
     ]
   },
   "dependencies": {
-    "react": "^0.14.7",
     "blacklist": "^1.1.2",
-    "scrollbar-width": "^3.1.1",
-    "react-dom": "^0.14.7",
-    "react-portal-wrap": "^1.1.1",
-    "react-addons-css-transition-group": "^0.14.7",
-    "classnames": "^2.2.3"
+    "classnames": "^2.2.3",
+    "preact": "^8.2.5",
+    "preact-css-transition-group": "^1.3.0",
+    "preact-portal": "^1.1.2",
+    "prop-types": "^15.6.0"
   }
 }

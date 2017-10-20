@@ -1,7 +1,8 @@
+import { h, render, Component } from 'preact';
 import createRemodal from '../'
 const Remodal = createRemodal()
 
-class Fixture extends React.Component {
+class Fixture extends Component {
   state = {
     isModalOpen: false
   }

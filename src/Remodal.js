@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react'
+import { h, render, Component } from 'preact';
+import PropTypes from 'prop-types';
 import classNames from 'classnames'
 import blacklist from 'blacklist'
 import { lock, unlock } from './helpers/scrollLock'

@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { render } from 'react-dom'
+import { h, render, Component } from 'preact';
+import PropTypes from 'prop-types';
 import createRemodal from '../../src/'
 
 const Remodal = createRemodal()
