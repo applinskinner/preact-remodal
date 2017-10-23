@@ -6,7 +6,7 @@ import Portal from 'preact-portal'
 const TransitionPortal = function({ children, ...props }) {
   return (
     <Portal ref={(ref) => { this.portal = ref; }} into="body">
-      <CSSTransitionGroup {...props}>
+      <CSSTransitionGroup ref={(ref) => { this.content = ref; }} {...props}>
         {children}
       </CSSTransitionGroup>
     </Portal>
