@@ -1,4 +1,4 @@
-let navigator = navigator || { platform: 'unknown' }
+let navigator = window.navigator || { platform: 'unknown' }
 const IS_IOS = /iPad|iPhone|iPod/.test(navigator.platform)
 
 export function lock () {
